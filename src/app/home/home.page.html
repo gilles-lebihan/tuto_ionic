@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>
       Ionic Blank
     </ion-title>
@@ -11,4 +14,12 @@
     The world is your oyster.
     <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
   </div>
+  <ion-button href="/aboutus"> about us </ion-button>
+  <ion-button (click)="presentActionSheet()"> hello action sheet </ion-button>
+  <ion-button (click)="presentAlert()"> hello alert </ion-button>
+  <ion-button (click)="presentLoadingWithOptions()"> hello loading </ion-button>
+  <ion-item>
+    <ion-label position="floating">Floating Label</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
 </ion-content>
